@@ -1,0 +1,133 @@
+
+section.feature {
+    padding: 4rem 0;
+
+    .inner-wrapper {
+        border-radius: 1rem;
+        overflow: hidden;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-image {
+        width: 50%;
+        min-height: 300px;
+        overflow: hidden;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+
+        .feature-image-callout {
+            display: none;
+        }
+    }
+
+    .feature-description {
+        width: 50%;
+        padding: 20px;
+        background:#fff;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 1.4rem;
+            width: 100%;
+        }
+
+        a.cta {
+            display: block;
+            width: 80%;
+            max-width: 200px;
+            margin: 15px auto 0;
+            text-align: center;
+            outline: 1px solid red;
+        }
+    }
+
+    &.product {
+        min-height: 500px;
+        padding-top: 20px;
+
+        @media only screen and (min-width: 1200px) {
+            background-image: url('/img/map-bg.gif');
+            background-origin: border-box;
+            background-repeat: repeat-y;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .inner-wrapper {
+            flex-wrap: wrap;
+            box-shadow: 0 0 0 0;
+        }
+
+        h1, h1 + p {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            padding: 0 0 1rem 0;
+        }
+
+        h1 + p {
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+    }
+
+    &.construction {
+        background: rgb(174, 174, 182);
+
+        .feature-image {
+            background-image: url('/img/traffic.jpg');
+        }
+    }
+
+    &.traffic {
+
+        .feature-image {
+            background-image: url('/img/traffic2.jpg');
+        }
+    }
+
+    &.accidents {
+        background: #eceef3;
+
+        .feature-image {
+            background-image: url('/img/accident.jpg');
+        }
+    }
+
+    &.weather {
+        .feature-image {
+            background-image: url('/img/weather.jpg');
+        }
+    }
+
+    &.testimonials {
+        background: #fff;
+    }
+
+    &.cta-special-offer {
+        background: #17365f;
+        padding-bottom: 100px;
+
+        .inner-wrapper {
+            justify-content: center;
+            box-shadow: 0 0 0 0;
+            .feature-description {
+                text-align: center;
+                color: #fff;
+                background-color: inherit;
+                width: 80%;
+            }
+        }
+    }
+}
