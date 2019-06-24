@@ -276,6 +276,17 @@ footer.main-footer p.copyright {
 .legal-container p {
   font-size: 1.2rem;
 }
+.privacy p {
+  padding-bottom: 10px;
+}
+.privacy ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.privacy ul li:before {
+  content: '•';
+  padding-right: 15px;
+}
 section.feature {
   padding: 4rem 0;
 }
