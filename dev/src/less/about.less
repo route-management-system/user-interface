@@ -5,7 +5,6 @@
     flex-direction: column;
 
     padding-bottom: 50px;
-    background: #f8f9fa;
 
     .team {
         text-align: center;
@@ -28,6 +27,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 2.6rem;
         font-weight: bolder;
+        text-align: center;
     }
 }
 
@@ -106,8 +106,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-right: 15px;
-        padding-left: 15px;
+        margin-right: 25px;
 
 
 
@@ -115,7 +114,7 @@
             margin-bottom: 20px;
             font-family: 'Montserrat', sans-serif;
             font-size: 2.4rem;
-            font-weight: bolder;
+            font-weight: 600;
         }
 
 
@@ -128,3 +127,59 @@
         }
     }
 }
+
+.questions-container {
+
+    .questions-header {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.6rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+
+.feature-layers-container {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .feature-layer {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        height: 200px;
+
+        display: flex;
+        justify-content: space-around;
+
+        .feature-icon {
+            font-size: 95px;
+            color: red;
+        }
+    }
+}
+
+.feature-content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        font-weight: bolder;
+    }
+
+    p {
+        display: none;
+
+        @media(min-width: 800px) {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+    }
+}
+

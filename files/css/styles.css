@@ -280,7 +280,6 @@ footer.main-footer p.copyright {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
-  background: #f8f9fa;
 }
 .about-wrapper .team {
   text-align: center;
@@ -295,6 +294,7 @@ footer.main-footer p.copyright {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.6rem;
   font-weight: bolder;
+  text-align: center;
 }
 .about-team {
   padding-bottom: 60px;
@@ -358,14 +358,13 @@ footer.main-footer p.copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 15px;
-  padding-left: 15px;
+  margin-right: 25px;
 }
 .company-summary .message-content h3 {
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.4rem;
-  font-weight: bolder;
+  font-weight: 600;
 }
 .company-summary .message-content p {
   margin-top: 10px;
@@ -373,6 +372,50 @@ footer.main-footer p.copyright {
   font-style: italic;
   font-weight: 100;
   font-size: 1.4rem;
+}
+.questions-container .questions-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.feature-layers-container {
+  display: flex;
+  align-items: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feature-layers-container .feature-layer {
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.feature-layers-container .feature-layer .feature-icon {
+  font-size: 95px;
+  color: red;
+}
+.feature-content {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.feature-content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.feature-content p {
+  display: none;
+}
+@media (min-width: 800px) {
+  .feature-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
 }
 @font-face {
   font-family: 'Montserrat';
