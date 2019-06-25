@@ -287,6 +287,57 @@ footer.main-footer p.copyright {
   content: '•';
   padding-right: 15px;
 }
+.team-container {
+  padding-top: 50px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.team-container .team-header {
+  display: flex;
+  justify-content: center;
+}
+.team-container .team-content {
+  display: flex;
+  flex-direction: column;
+}
+.team-container .team-content .team-member {
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: flex-end;
+}
+.team-container .team-content .team-member .avatar {
+  width: 180px;
+  height: 180px;
+  margin-top: 6px;
+  margin-right: 2em;
+  background: blue;
+  border-radius: 50%;
+}
+.team-container .team-content .team-member h5 {
+  font-size: 1.8rem;
+}
+.team-title-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.team-title-div .media-icons {
+  display: flex;
+}
+.team-title-div .media-icons .social-icon {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  margin-left: 12px;
+  color: blue;
+}
 section.feature {
   padding: 4rem 0;
 }
