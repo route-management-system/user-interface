@@ -262,6 +262,15 @@ footer.main-footer p.copyright {
   position: relative;
   bottom: 0;
 }
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.about-wrapper .team {
+  text-align: center;
+  font-size: 2.6rem;
+}
 .blog-wrapper {
   display: flex;
   flex-direction: column;
@@ -361,8 +370,6 @@ footer.main-footer p.copyright {
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 2em;
-  text-decoration: none;
-  color: black;
   display: flex;
   justify-content: flex-start;
 }
@@ -373,9 +380,15 @@ footer.main-footer p.copyright {
   margin-right: 2em;
   background: blue;
   border-radius: 50%;
+  padding: 80px;
 }
 .team-container .team-content .team-member h5 {
   font-size: 1.8rem;
+}
+.member-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .team-title-div {
   width: 100%;
@@ -391,10 +404,6 @@ footer.main-footer p.copyright {
   font-size: 25px;
   margin-left: 12px;
   color: blue;
-}
-.member-summary {
-  display: flex;
-  flex-direction: column;
 }
 section.feature {
   padding: 4rem 0;
