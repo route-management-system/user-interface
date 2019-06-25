@@ -262,14 +262,117 @@ footer.main-footer p.copyright {
   position: relative;
   bottom: 0;
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
 .about-wrapper {
   display: flex;
   flex-direction: column;
   padding-bottom: 50px;
+  background: #f8f9fa;
 }
 .about-wrapper .team {
   text-align: center;
   font-size: 2.6rem;
+}
+.about-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bolder;
+}
+.about-team-header h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.6rem;
+  font-weight: bolder;
+}
+.about-team {
+  padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-around;
+}
+.about-team .about-member {
+  margin-top: 25px;
+  width: 300px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-team .about-member .member-pic {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  border-radius: 50%;
+}
+.about-team-summary h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.about-team-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-team-title p {
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.about-team-title .social-links {
+  margin-top: 5px;
+  display: flex;
+}
+.about-team-title .social-links .icon {
+  color: blue;
+  font-size: 40px;
+  margin-right: 4px;
+}
+.company-summary .message-image {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+@media (min-width: 800px) {
+  .company-summary .message-image {
+    height: 300px;
+  }
+}
+.company-summary .message-content {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.company-summary .message-content h3 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: bolder;
+}
+.company-summary .message-content p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 1.4rem;
 }
 @font-face {
   font-family: 'Montserrat';
