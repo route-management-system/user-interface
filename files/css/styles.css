@@ -262,6 +262,56 @@ footer.main-footer p.copyright {
   position: relative;
   bottom: 0;
 }
+.blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+}
+.articles-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.article-layer {
+  width: 500px;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+.article-layer .article-image {
+  width: 200px;
+  height: 150px;
+  margin-right: 20px;
+  background: blue;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-left: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.article-layer .article-content {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.article-layer .article-content button {
+  width: 100px;
+  height: 40px;
+  background: blue;
+  color: white;
+  border-radius: 15px;
+}
+.legal-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .legal-container {
   padding-top: 20px;
   padding-left: 25px;
@@ -276,6 +326,10 @@ footer.main-footer p.copyright {
 .legal-container p {
   font-size: 1.2rem;
 }
+.privacy-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .privacy p {
   padding-bottom: 10px;
 }
@@ -287,15 +341,15 @@ footer.main-footer p.copyright {
   content: '•';
   padding-right: 15px;
 }
+.team-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .team-container {
   padding-top: 50px;
   padding-bottom: 200px;
   display: flex;
   flex-direction: column;
-}
-.team-container .team-header {
-  display: flex;
-  justify-content: center;
 }
 .team-container .team-content {
   display: flex;
@@ -310,7 +364,7 @@ footer.main-footer p.copyright {
   text-decoration: none;
   color: black;
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-start;
 }
 .team-container .team-content .team-member .avatar {
   width: 180px;
@@ -337,6 +391,10 @@ footer.main-footer p.copyright {
   font-size: 25px;
   margin-left: 12px;
   color: blue;
+}
+.member-summary {
+  display: flex;
+  flex-direction: column;
 }
 section.feature {
   padding: 4rem 0;
