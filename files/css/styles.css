@@ -434,6 +434,10 @@ footer.main-footer p.copyright .co-full-name {
   font-size: 3.2rem;
   font-weight: bolder;
 }
+.about-team-header {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 .about-team-header h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.6rem;
@@ -498,6 +502,7 @@ footer.main-footer p.copyright .co-full-name {
   }
 }
 .company-summary .message-content {
+  margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -517,45 +522,58 @@ footer.main-footer p.copyright .co-full-name {
   font-weight: 100;
   font-size: 1.4rem;
 }
+.questions-container {
+  margin-top: 30px;
+}
 .questions-container .questions-header {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.6rem;
   font-weight: bolder;
   text-align: center;
+  margin-bottom: 30px;
 }
 .feature-layers-container {
   display: flex;
-  align-items: space-between;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .feature-layers-container .feature-layer {
   align-items: center;
-  width: 500px;
-  height: 200px;
+  width: 520px;
+  height: 250px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-around;
 }
 .feature-layers-container .feature-layer .feature-icon {
   font-size: 95px;
   color: red;
+  margin-left: 10px;
 }
 .feature-content {
   margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  margin-right: 20px;
+}
+@media (min-width: 800px) {
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .feature-content h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: bolder;
+  margin-bottom: 15px;
 }
 .feature-content p {
   display: none;
 }
 @media (min-width: 800px) {
   .feature-content p {
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: bolder;
@@ -570,6 +588,7 @@ footer.main-footer p.copyright .co-full-name {
 }
 .shadow-element {
   box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
+  transform: perspective(700px) translateZ(30px);
 }
 .blog-wrapper {
   display: flex;
@@ -605,10 +624,7 @@ footer.main-footer p.copyright .co-full-name {
   width: 150px;
   height: 150px;
   margin-right: 20px;
-  background: blue;
   border-radius: 10px;
-  padding-top: 40px;
-  padding-left: 40px;
   display: none;
 }
 @media (min-width: 800px) {
@@ -676,15 +692,18 @@ footer.main-footer p.copyright .co-full-name {
   content: '•';
   padding-right: 15px;
 }
+.team-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bolder;
+}
 .team-wrapper {
   display: flex;
   flex-direction: column;
 }
 .shadow-element {
   box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
-}
-.team-header {
-  background: #e4decd;
+  transform: perspective(700px) translateZ(30px);
 }
 .team-container {
   padding-top: 50px;
@@ -704,6 +723,7 @@ footer.main-footer p.copyright .co-full-name {
   margin-bottom: 2em;
   padding: 2em;
   max-width: 800px;
+  border-radius: 5px;
   display: flex;
   justify-content: flex-start;
 }
@@ -717,7 +737,9 @@ footer.main-footer p.copyright .co-full-name {
   padding: 80px;
 }
 .team-container .team-content .team-member h5 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
+  font-weight: bolder;
 }
 .member-summary {
   display: flex;
@@ -738,6 +760,16 @@ footer.main-footer p.copyright .co-full-name {
   font-size: 25px;
   margin-left: 12px;
   color: blue;
+}
+.team-title-div p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.summary p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 section.feature {
   padding: 4rem 0;
