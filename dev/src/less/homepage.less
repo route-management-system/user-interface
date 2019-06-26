@@ -49,12 +49,45 @@ section.feature {
         }
     }
 
+    .cta-button {
+        border-radius: .5rem;
+        box-shadow: 0 0.1em 0.2em rgba(0,0,0,0.4);
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0em;
+        line-height: 1.2;
+        padding: 0.8em 1.5em;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        vertical-align: top;
+        transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+        &.blue-btn {
+            background-color: #2d69a1;
+            color: #ffffff;
+        }
+
+        &.green-btn {
+            background-color: #21af58;
+            color: #ffffff;
+        }
+      }
+
+    small {
+        font-size: .8rem;
+    }
+
     &.product {
-        min-height: 500px;
-        padding-top: 20px;
+        padding-top: 4rem;
 
         @media only screen and (min-width: 1024px) {
-            background-image: url('/img/map-bg.gif');
+            background-image: url('../img/map-wide-bg-01.jpg');
             background-origin: border-box;
             background-repeat: repeat-y;
             background-position: center;
@@ -63,12 +96,16 @@ section.feature {
 
         .inner-wrapper {
             flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
             box-shadow: 0 0 0 0;
         }
 
-        h1, h1 + p {
+        h1, p {
             width: 100%;
+            max-width: 800px;
             text-align: center;
+            margin: 0 auto;
         }
 
         h1 {
@@ -76,9 +113,13 @@ section.feature {
             padding: 0 0 1rem 0;
         }
 
-        h1 + p {
+        p {
             font-size: 1.5rem;
             line-height: 1.5;
+        }
+
+        img {
+            width: 100%;
         }
     }
 
@@ -86,14 +127,14 @@ section.feature {
         background: rgb(174, 174, 182);
 
         .feature-image {
-            background-image: url('/img/traffic.jpg');
+            background-image: url('../img/traffic.jpg');
         }
     }
 
     &.traffic {
 
         .feature-image {
-            background-image: url('/img/traffic2.jpg');
+            background-image: url('../img/traffic2.jpg');
         }
     }
 
@@ -101,13 +142,13 @@ section.feature {
         background: #eceef3;
 
         .feature-image {
-            background-image: url('/img/accident.jpg');
+            background-image: url('../img/accident.jpg');
         }
     }
 
     &.weather {
         .feature-image {
-            background-image: url('/img/weather.jpg');
+            background-image: url('../img/weather.jpg');
         }
     }
 

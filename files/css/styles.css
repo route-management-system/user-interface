@@ -782,13 +782,42 @@ section.feature .feature-description a.cta {
   text-align: center;
   outline: 1px solid red;
 }
+section.feature .cta-button {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  padding: 0.8em 1.5em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: top;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+section.feature .cta-button.blue-btn {
+  background-color: #2d69a1;
+  color: #ffffff;
+}
+section.feature .cta-button.green-btn {
+  background-color: #21af58;
+  color: #ffffff;
+}
+section.feature small {
+  font-size: 0.8rem;
+}
 section.feature.product {
-  min-height: 500px;
-  padding-top: 20px;
+  padding-top: 4rem;
 }
 @media only screen and (min-width: 1024px) {
   section.feature.product {
-    background-image: url('/img/map-bg.gif');
+    background-image: url('../img/map-wide-bg-01.jpg');
     background-origin: border-box;
     background-repeat: repeat-y;
     background-position: center;
@@ -797,38 +826,45 @@ section.feature.product {
 }
 section.feature.product .inner-wrapper {
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   box-shadow: 0 0 0 0;
 }
 section.feature.product h1,
-section.feature.product h1 + p {
+section.feature.product p {
   width: 100%;
+  max-width: 800px;
   text-align: center;
+  margin: 0 auto;
 }
 section.feature.product h1 {
   font-size: 2rem;
   padding: 0 0 1rem 0;
 }
-section.feature.product h1 + p {
+section.feature.product p {
   font-size: 1.5rem;
   line-height: 1.5;
+}
+section.feature.product img {
+  width: 100%;
 }
 section.feature.construction {
   background: #aeaeb6;
 }
 section.feature.construction .feature-image {
-  background-image: url('/img/traffic.jpg');
+  background-image: url('../img/traffic.jpg');
 }
 section.feature.traffic .feature-image {
-  background-image: url('/img/traffic2.jpg');
+  background-image: url('../img/traffic2.jpg');
 }
 section.feature.accidents {
   background: #eceef3;
 }
 section.feature.accidents .feature-image {
-  background-image: url('/img/accident.jpg');
+  background-image: url('../img/accident.jpg');
 }
 section.feature.weather .feature-image {
-  background-image: url('/img/weather.jpg');
+  background-image: url('../img/weather.jpg');
 }
 section.feature.testimonials {
   background: #fff;
