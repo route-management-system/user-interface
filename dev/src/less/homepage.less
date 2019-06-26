@@ -5,7 +5,7 @@ section.feature {
     .inner-wrapper {
         border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); */
     }
 
     .feature-image {
@@ -120,6 +120,41 @@ section.feature {
 
         img {
             width: 100%;
+        }
+    }
+
+    &.testimonial {
+        background: #7395ae;
+        width: 100%;
+
+        .inner-wrapper {
+            padding: 10px;
+            width: 90%;
+            max-width: 800px;
+            flex-direction: column;
+            background: rgba(196, 219, 243, 0.7);
+
+            @media only screen and (min-width: 600px) {
+                padding: 30px;
+            }
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1rem;
+
+            @media only screen and (min-width: 600px) {
+                font-weight: bold;
+                font-size: 2rem;
+            }
+        }
+
+        .customer {
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            text-align: right;
+            padding-top: 20px;
         }
     }
 
