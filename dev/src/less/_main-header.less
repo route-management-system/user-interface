@@ -28,7 +28,9 @@ header.main-header {
         }
 
         a {
-            display: none;
+            display: block;
+            margin-left: -10000px;
+            position: absolute;
             width: 100%;
             height: @mobile-menu-height;
             line-height: @mobile-menu-height;
@@ -45,6 +47,8 @@ header.main-header {
                 padding: 0;
                 display: block;
                 text-align: center;
+                position: relative;
+                margin: 0;
             }
 
             &.menu-button, &.logo-button {
@@ -52,14 +56,17 @@ header.main-header {
                 position: relative;
                 display: block;
                 text-align: center;
+                margin: 0;
                 background: @menu-bg-color;
             }
 
             &.menu-button {
+                margin: 0;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 96px;
+                width: 106px;
+                overflow: hidden;
                 border: 0;
                 font-size: @mobile-menu-font-size / 2;
                 cursor: pointer;
@@ -79,7 +86,7 @@ header.main-header {
                 }
 
                 @media only screen and (min-width: 1024px) {
-                    display: none;
+                    margin-left: -10000px;
                 }
             }
 

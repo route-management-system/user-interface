@@ -14,7 +14,7 @@
     const menu_items = top_nav_menu.querySelectorAll('a');
 
     // menu item hight used to calculate y position to tween to
-    nav_menu.item_height = menu_items[0].scrollHeight;
+    nav_menu.item_height = menu_items[1].scrollHeight;
 
     menu_button.addEventListener(
         'click',
@@ -29,6 +29,7 @@
                             ease: Power4.easeOut,
                             y: nav_menu.item_height * (i - 1),
                             onStart: () => {
+                                el.style.marginLeft = 0;
                                 el.style.position = 'absolute';
                                 el.style.display = 'block';
                                 el.style.zIndex = 100;
@@ -48,8 +49,8 @@
                             ease: Power4.easeOut,
                             y: 0 ,
                             onComplete:() => {
-                                el.style.position = 'absolute';
-                                el.style.display = 'none';
+                                el.style.position = '';
+                                el.style.display = '';
                             }
                         });
                     }
@@ -75,8 +76,8 @@
                             ease: Power4.easeOut,
                             y: 0,
                             onComplete:() => {
-                                el.style.position = 'absolute';
-                                el.style.display = 'none';
+                                el.style.position = '';
+                                el.style.display = '';
                             }
                         });
                     }
