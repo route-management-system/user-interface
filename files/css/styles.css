@@ -168,6 +168,33 @@ h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
 }
+.cta-button {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  padding: 0.8em 1.5em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: top;
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.cta-button.blue-btn {
+  background-color: #2d69a1;
+  color: #ffffff;
+}
+.cta-button.green-btn {
+  background-color: #21af58;
+  color: #ffffff;
+}
 /* for dev only will be removed */
 h1.dev {
   text-align: center;
@@ -661,6 +688,41 @@ footer.main-footer p.copyright .co-full-name {
 .legal-container p {
   font-size: 1.2rem;
 }
+section.login .inner-wrapper {
+  flex-direction: column;
+  padding-top: 20px;
+}
+section.login h1 {
+  font-size: 2rem;
+  margin: 20px auto;
+}
+section.login form {
+  width: 100%;
+  padding-bottom: 40px;
+  display: block;
+  max-width: 300px;
+  margin: 10px auto;
+}
+section.login form label {
+  width: 100%;
+  display: block;
+  font-size: 1.5rem;
+}
+section.login form input[type=email],
+section.login form input[type=password] {
+  line-height: 2rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+section.login form .submit {
+  margin-top: 1rem;
+}
+section.login form .cta-button {
+  margin-top: 15px;
+  display: block;
+  margin: 0 auto;
+}
 .privacy-wrapper {
   display: flex;
   flex-direction: column;
@@ -782,33 +844,6 @@ section.feature .feature-description a.cta {
   text-align: center;
   outline: 1px solid red;
 }
-section.feature .cta-button {
-  border-radius: 0.5rem;
-  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0em;
-  line-height: 1.2;
-  padding: 0.8em 1.5em;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  vertical-align: top;
-  transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, opacity 0.3s, color 0.3s;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-section.feature .cta-button.blue-btn {
-  background-color: #2d69a1;
-  color: #ffffff;
-}
-section.feature .cta-button.green-btn {
-  background-color: #21af58;
-  color: #ffffff;
-}
 section.feature small {
   font-size: 0.8rem;
 }
@@ -866,7 +901,7 @@ section.feature.testimonial .inner-wrapper {
 }
 section.feature.testimonial blockquote {
   font-style: italic;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 @media only screen and (min-width: 600px) {
   section.feature.testimonial blockquote {
