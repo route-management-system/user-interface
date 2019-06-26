@@ -30,7 +30,6 @@ if (document.querySelectorAll('.team-member').length > 0) {
 } else {
 	console.log('nothing matching command');
 }
-
 (function () {
     'use strict';
 
