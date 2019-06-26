@@ -290,6 +290,10 @@ footer.main-footer p.copyright {
   font-size: 3.2rem;
   font-weight: bolder;
 }
+.about-team-header {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 .about-team-header h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.6rem;
@@ -441,6 +445,7 @@ footer.main-footer p.copyright {
 }
 .shadow-element {
   box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
+  transform: perspective(700px) translateZ(30px);
 }
 .blog-wrapper {
   display: flex;
@@ -555,6 +560,7 @@ footer.main-footer p.copyright {
 }
 .shadow-element {
   box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
+  transform: perspective(700px) translateZ(30px);
 }
 .team-container {
   padding-top: 50px;

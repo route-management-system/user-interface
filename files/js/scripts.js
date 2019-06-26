@@ -10,8 +10,6 @@ class Shadow {
 	}
 
 	toggleShadowOver() {
-		const items = document.querySelectorAll('.team-member');
-		items.forEach(item => item.classList.remove('shadow-element'));
 		this.element.classList.add('shadow-element');
 	}
 
@@ -20,30 +18,23 @@ class Shadow {
 	}
 }
 
-class ShadowBlog {
-	constructor(element) {
-		this.element = element;
-		this.element.addEventListener('mouseover', this.toggleShadowOver.bind(this));
-		this.element.addEventListener('mouseout', this.toggleShadowLeave.bind(this));
-	}
-	toggleShadowOver() {
-		const items = document.querySelectorAll('.article-layer');
-		items.forEach(item => item.classList.remove('shadow-element'));
-		this.element.classList.add('shadow-element');
-	}
 
-	toggleShadowLeave() {
-		this.element.classList.remove('shadow-element');
-	}
+if (document.querySelectorAll('.team-member').length > 0) {
+	const links = document.querySelectorAll('.team-member');
+	console.log('found elements 1');
+	links.forEach(link => new Shadow(link));
+} else if (document.querySelectorAll('.article-layer').length > 0) {
+	const links = document.querySelectorAll('.article-layer');
+	console.log('found elements 2');
+	links.forEach(link => new Shadow(link));
+} else {
+	console.log('nothing matching command');
 }
-
-const links = document.querySelectorAll('.team-member');
-links.forEach(link => new Shadow(link));
-const linksBlog = document.querySelectorAll('.article-layer');
-linksBlog.forEach(link => new ShadowBlog(link));
 
 
 /* scrolling animations for about.html */
 AOS.init({
-  duration: 1200,
+  duration: 1300,
 });
+
+
