@@ -32,6 +32,7 @@ if (document.querySelectorAll('.team-member').length > 0) {
 }
 
 
+
 (function () {
     'use strict';
 
@@ -39,5 +40,3 @@ if (document.querySelectorAll('.team-member').length > 0) {
     const footer_height = document.querySelector('.main-footer').scrollHeight;
     document.body.style.paddingBottom = (footer_height - 10) + 'px';
 }());
-
-
