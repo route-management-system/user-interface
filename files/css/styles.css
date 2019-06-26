@@ -412,6 +412,7 @@ footer.main-footer p.copyright {
 }
 @media (min-width: 800px) {
   .feature-content p {
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: bolder;
@@ -461,10 +462,7 @@ footer.main-footer p.copyright {
   width: 150px;
   height: 150px;
   margin-right: 20px;
-  background: blue;
   border-radius: 10px;
-  padding-top: 40px;
-  padding-left: 40px;
   display: none;
 }
 @media (min-width: 800px) {
@@ -532,15 +530,17 @@ footer.main-footer p.copyright {
   content: '•';
   padding-right: 15px;
 }
+.team-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bolder;
+}
 .team-wrapper {
   display: flex;
   flex-direction: column;
 }
 .shadow-element {
   box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
-}
-.team-header {
-  background: #e4decd;
 }
 .team-container {
   padding-top: 50px;
@@ -560,6 +560,7 @@ footer.main-footer p.copyright {
   margin-bottom: 2em;
   padding: 2em;
   max-width: 800px;
+  border-radius: 5px;
   display: flex;
   justify-content: flex-start;
 }
@@ -573,7 +574,9 @@ footer.main-footer p.copyright {
   padding: 80px;
 }
 .team-container .team-content .team-member h5 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
+  font-weight: bolder;
 }
 .member-summary {
   display: flex;
@@ -594,6 +597,16 @@ footer.main-footer p.copyright {
   font-size: 25px;
   margin-left: 12px;
   color: blue;
+}
+.team-title-div p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.summary p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
 }
 section.feature {
   padding: 4rem 0;
