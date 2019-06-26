@@ -31,8 +31,6 @@ if (document.querySelectorAll('.team-member').length > 0) {
 	console.log('nothing matching command');
 }
 
-
-
 (function () {
     'use strict';
 
