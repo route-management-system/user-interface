@@ -491,19 +491,13 @@ footer.main-footer p.copyright .co-full-name {
   font-size: 40px;
   margin-right: 4px;
 }
-.company-summary .message-image {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 20px;
-}
-@media (min-width: 800px) {
-  .company-summary .message-image {
-    height: 300px;
-  }
+.about-team-title .social-links .icon:hover {
+  color: red;
 }
 .company-summary .message-content {
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -648,7 +642,13 @@ footer.main-footer p.copyright .co-full-name {
   background: blue;
   color: white;
   border: 1px solid white;
+  font-size: 1rem;
   border-radius: 15px;
+}
+.article-layer .article-content button:hover {
+  background: white;
+  color: blue;
+  border-color: blue;
 }
 .article-content h3 {
   font-family: 'Montserrat', sans-serif;
@@ -732,9 +732,7 @@ footer.main-footer p.copyright .co-full-name {
   height: 180px;
   margin-top: 6px;
   margin-right: 2em;
-  background: blue;
   border-radius: 50%;
-  padding: 80px;
 }
 .team-container .team-content .team-member h5 {
   font-family: 'Montserrat', sans-serif;
@@ -761,6 +759,9 @@ footer.main-footer p.copyright .co-full-name {
   margin-left: 12px;
   color: blue;
 }
+.team-title-div .media-icons .social-icon:hover {
+  color: red;
+}
 .team-title-div p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
@@ -770,6 +771,12 @@ footer.main-footer p.copyright .co-full-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
+  display: none;
+}
+@media (min-width: 800px) {
+  .summary p {
+    display: block;
+  }
 }
 section.feature {
   padding: 4rem 0;

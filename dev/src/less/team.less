@@ -49,9 +49,7 @@
           height: 180px;
           margin-top: 6px;
           margin-right: 2em;
-          background: blue;
-          border-radius: 50%; 
-          padding: 80px; 
+          border-radius: 50%;  
         }
         
         h5 {
@@ -85,6 +83,10 @@
         font-size: 25px;
         margin-left: 12px;
         color: blue;
+        
+        &:hover {
+          color: red;
+        }
       }
     }
   }
@@ -102,6 +104,11 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
       font-weight: lighter;
+      display: none;
+
+      @media(min-width: 800px) {
+        display: block;
+      }
 
     }
   }
