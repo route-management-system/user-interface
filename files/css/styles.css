@@ -131,6 +131,8 @@ table {
 /* base colors */
 /* base sizes/widths */
 /* header & footer */
+/* mobile menu sizes */
+/* menu colors */
 html {
   box-sizing: border-box;
 }
@@ -151,8 +153,9 @@ body {
 .inner-wrapper {
   display: flex;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1200px;
   position: relative;
+  padding: 0 0.5rem;
 }
 /* for dev only will be removed */
 h1.dev {
@@ -162,44 +165,121 @@ h1.dev {
 }
 /* header.main-header - Header used on the marketing site */
 header.main-header {
-  min-height: 3rem;
   background: #2d3238;
   color: #fff;
-  line-height: 2rem;
-  font-size: 1.2rem;
+  position: relative;
 }
 header.main-header .inner-wrapper {
-  justify-content: space-between;
+  padding: 0;
 }
 header.main-header a {
-  display: inline-block;
-  text-decoration: none;
   color: #fff;
-}
-header.main-header a.logo {
-  width: 250px;
-  border: 1px solid #999;
-}
-header.main-header a.login {
-  width: 150px;
-  border: 1px solid #999;
-  text-align: center;
+  background-color: #2d3238;
+  display: block;
+  text-decoration: none;
 }
 header.main-header nav {
-  flex-grow: 1;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+@media only screen and (min-width: 1024px) {
+  header.main-header nav {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 header.main-header nav a {
-  padding: 5px 0;
+  display: none;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 20px;
+  padding-left: 20px;
+  border-top: 1px solid #999;
 }
-header.main-header nav a:hover {
-  padding-bottom: 0;
-  border-bottom: 5px solid #256bec;
+@media only screen and (min-width: 600px) {
+  header.main-header nav a {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header.main-header nav a {
+    border: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+}
+header.main-header nav a.menu-button,
+header.main-header nav a.logo-button {
+  padding-left: 0;
+  position: relative;
+  display: block;
+  text-align: center;
+  background: #2d3238;
+}
+header.main-header nav a.menu-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 96px;
+  border: 0;
+  font-size: 10px;
+  cursor: pointer;
+  z-index: 10000;
+}
+header.main-header nav a.menu-button img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  max-width: 32px;
+  max-height: 24px;
+}
+@media only screen and (min-width: 600px) {
+  header.main-header nav a.menu-button {
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header.main-header nav a.menu-button {
+    display: none;
+  }
+}
+header.main-header nav a.logo-button {
+  flex-grow: 1;
+  border: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+header.main-header nav a.logo-button img {
+  max-height: 38.4px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+@media only screen and (min-width: 1024px) {
+  header.main-header nav a.logo-button {
+    flex-grow: 0;
+  }
+}
+header.main-header nav a.close-button {
+  height: 38.4px;
+  line-height: 38.4px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (min-width: 600px) {
+  header.main-header nav a.close-button {
+    display: none;
+  }
 }
 /* header.main-footr - Footer used on the marketing site */
 footer.main-footer {
-  padding: 1px 0;
+  padding: 20px 0 1px;
   background: #2d3238;
   color: #fff;
   position: absolute;
@@ -213,16 +293,27 @@ footer.main-footer .inner-wrapper {
   top: 0;
 }
 footer.main-footer h3 {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 2rem;
-  width: 95%;
-  border-bottom: 1px solid #999;
-  margin: 0 auto;
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  footer.main-footer h3 {
+    display: block;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 95%;
+    border-bottom: 1px solid #999;
+    margin: 0 auto;
+  }
 }
 footer.main-footer a {
-  text-decoration: none;
   color: #fff;
+  font-size: 0.8rem;
+}
+@media only screen and (min-width: 600px) {
+  footer.main-footer a {
+    text-decoration: none;
+  }
 }
 footer.main-footer a:hover {
   text-decoration: underline;
@@ -231,11 +322,26 @@ footer.main-footer .footer-panels {
   min-height: 150px;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
 }
-footer.main-footer .footer-panels > div {
-  margin-top: 20px;
+@media only screen and (min-width: 600px) {
+  footer.main-footer .footer-panels {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 600px) {
+  footer.main-footer .footer-panels > div {
+    margin-top: 20px;
+  }
+}
+footer.main-footer .footer-panels .contact {
+  display: none;
+}
+@media only screen and (min-width: 800px) {
+  footer.main-footer .footer-panels .contact {
+    display: block;
+  }
 }
 footer.main-footer .footer-panels .contact p {
   padding-top: 10px;
@@ -245,22 +351,42 @@ footer.main-footer .footer-panels .contact address p {
 }
 footer.main-footer .footer-panels .footer-links {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 600px) {
+  footer.main-footer .footer-panels .footer-links {
+    flex-direction: column;
+  }
 }
 footer.main-footer .footer-panels .footer-links a {
   display: block;
   padding-bottom: 12px;
+  width: 50%;
+  padding-left: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  footer.main-footer .footer-panels .footer-links a {
+    width: 100%;
+  }
 }
 footer.main-footer p.copyright {
-  margin: auto 0 0;
+  margin: 15px auto 0;
   width: 100%;
   line-height: 1.5;
   padding: 10px 0;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-top: 1px solid #999;
   position: relative;
   bottom: 0;
+}
+footer.main-footer p.copyright .co-full-name {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  footer.main-footer p.copyright .co-full-name {
+    display: inline;
+  }
 }
 section.feature {
   padding: 4rem 0;
@@ -309,7 +435,7 @@ section.feature.product {
   min-height: 500px;
   padding-top: 20px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   section.feature.product {
     background-image: url('/img/map-bg.gif');
     background-origin: border-box;
