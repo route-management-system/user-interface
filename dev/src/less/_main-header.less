@@ -1,45 +1,124 @@
 /* header.main-header - Header used on the marketing site */
+
 header.main-header {
-    min-height: 3rem;
     background: @header-bg-color;
     color: @header-font-color;
-    line-height: 2rem;
-    font-size: 1.2rem;
+    position: relative;
 
     .inner-wrapper {
-        justify-content: space-between;
+        padding: 0;
     }
 
     a {
-        display: inline-block;
+        color: @menu-font-color;
+        background-color: @menu-bg-color;
+        display: block;
         text-decoration: none;
-        color: @header-a-color;
-    }
-
-    a.logo {
-        width: 250px;
-        border: 1px solid #999;
-    }
-
-    a.login {
-        width: 150px;
-        border: 1px solid #999;
-        text-align: center;
     }
 
     nav {
-        flex-grow: 1;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        position: relative;
+
+        @media only screen and (min-width: 1024px) {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
 
         a {
-            padding: 5px 0;
-        }
+            display: block;
+            margin-left: -10000px;
+            position: absolute;
+            width: 100%;
+            height: @mobile-menu-height;
+            line-height: @mobile-menu-height;
+            font-size: @mobile-menu-font-size;
+            padding-left: 20px;
+            border-top: 1px solid #999;
 
-        a:hover {
-            padding-bottom: 0;
-            border-bottom: 5px solid rgb(37, 107, 236);
+            @media only screen and (min-width: 600px) {
+                width: 50%;
+            }
+
+            @media only screen and (min-width: 1024px) {
+                border: 0;
+                padding: 0;
+                display: block;
+                text-align: center;
+                position: relative;
+                margin: 0;
+            }
+
+            &.menu-button, &.logo-button {
+                padding-left: 0;
+                position: relative;
+                display: block;
+                text-align: center;
+                margin: 0;
+                background: @menu-bg-color;
+            }
+
+            &.menu-button {
+                margin: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 106px;
+                overflow: hidden;
+                border: 0;
+                font-size: @mobile-menu-font-size / 2;
+                cursor: pointer;
+                z-index: 10000;
+
+                img {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    max-width: 32px;
+                    max-height: 24px;
+                }
+
+                @media only screen and (min-width: 600px) {
+                    text-align: left;
+                    padding-left: 10px;
+                }
+
+                @media only screen and (min-width: 1024px) {
+                    margin-left: -10000px;
+                }
+            }
+
+            &.logo-button {
+                flex-grow: 1;
+                border: 0;
+                overflow: hidden;
+                z-index: 1000;
+
+                img {
+                    max-height: @mobile-menu-height * 0.8;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+
+                @media only screen and (min-width: 1024px) {
+                    flex-grow: 0;
+                }
+            }
+
+            &.close-button {
+                height: @mobile-menu-height * 0.8;
+                line-height: @mobile-menu-height * 0.8;
+                font-size: @mobile-menu-font-size * 0.8;
+                text-align: center;
+                cursor: pointer;
+
+                @media only screen and (min-width: 600px) {
+                    display: none;
+                }
+            }
         }
     }
-
 }

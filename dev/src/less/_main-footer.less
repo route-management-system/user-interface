@@ -1,6 +1,6 @@
 /* header.main-footr - Footer used on the marketing site */
 footer.main-footer {
-    padding: 1px 0;
+    padding: 20px 0 1px;
     background: @footer-bg-color;
     color: @footer-font-color;
     position: absolute;
@@ -15,17 +15,26 @@ footer.main-footer {
     }
 
     h3 {
-        text-align: center;
-        padding: 20px 0;
-        font-size: 2rem;
-        width: 95%;
-        border-bottom: 1px solid #999;
-        margin: 0 auto;
+        display: none;
+
+        @media only screen and (min-width: 600px) {
+            display: block;
+            text-align: center;
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            width: 95%;
+            border-bottom: 1px solid #999;
+            margin: 0 auto;
+        }
     }
 
     a {
-        text-decoration: none;
         color: @footer-a-color;
+        font-size: .8rem;
+
+        @media only screen and (min-width: 600px) {
+            text-decoration: none;
+        }
     }
 
     a:hover {
@@ -36,12 +45,28 @@ footer.main-footer {
         min-height: 150px;
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+
+        @media only screen and (min-width: 600px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
 
     .footer-panels > div {
-        margin-top: 20px;
+
+        @media only screen and (min-width: 600px) {
+            margin-top: 20px;
+        }
+
+    }
+
+    .footer-panels .contact {
+        display: none;
+
+        @media only screen and (min-width: 800px) {
+            display: block;
+        }
     }
 
     .footer-panels .contact p {
@@ -54,23 +79,41 @@ footer.main-footer {
 
     .footer-panels .footer-links {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+
+        @media only screen and (min-width: 600px) {
+            flex-direction: column;
+        }
     }
 
     .footer-panels .footer-links a {
         display: block;
         padding-bottom: 12px;
+        width: 50%;
+        padding-left: 1rem;
+
+        @media only screen and (min-width: 600px) {
+            width: 100%;
+        }
     }
 
     p.copyright {
-        margin: auto 0 0;
+        margin: 15px auto 0;
         width: 100%;
         line-height: 1.5;
         padding: 10px 0;
         text-align: center;
-        font-size: .9rem;
+        font-size: .8rem;
         border-top: 1px solid #999;
         position: relative;
         bottom: 0;
+
+        .co-full-name {
+            display: none;
+
+            @media only screen and (min-width: 600px) {
+                display: inline;
+            }
+        }
     }
 }
