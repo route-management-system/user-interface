@@ -41,3 +41,9 @@ const links = document.querySelectorAll('.team-member');
 links.forEach(link => new Shadow(link));
 const linksBlog = document.querySelectorAll('.article-layer');
 linksBlog.forEach(link => new ShadowBlog(link));
+
+
+/* scrolling animations for about.html */
+AOS.init({
+  duration: 1200,
+});

@@ -354,6 +354,7 @@ footer.main-footer p.copyright {
   }
 }
 .company-summary .message-content {
+  margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -373,39 +374,52 @@ footer.main-footer p.copyright {
   font-weight: 100;
   font-size: 1.4rem;
 }
+.questions-container {
+  margin-top: 30px;
+}
 .questions-container .questions-header {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.6rem;
   font-weight: bolder;
   text-align: center;
+  margin-bottom: 30px;
 }
 .feature-layers-container {
   display: flex;
-  align-items: space-between;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .feature-layers-container .feature-layer {
   align-items: center;
-  width: 500px;
-  height: 200px;
+  width: 520px;
+  height: 250px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: 1px solid red;
   display: flex;
   justify-content: space-around;
 }
 .feature-layers-container .feature-layer .feature-icon {
   font-size: 95px;
   color: red;
+  margin-left: 10px;
 }
 .feature-content {
   margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  margin-right: 20px;
+}
+@media (min-width: 800px) {
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .feature-content h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: bolder;
+  margin-bottom: 15px;
 }
 .feature-content p {
   display: none;
