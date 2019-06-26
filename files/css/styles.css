@@ -738,6 +738,22 @@ section.login form .cta-button {
   content: '•';
   padding-right: 15px;
 }
+section.about-product .inner-wrapper {
+  flex-direction: column;
+  max-width: 800px;
+}
+section.about-product article {
+  margin-bottom: 25px;
+}
+section.about-product article h2 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+section.about-product article p {
+  font-size: 1.2rem;
+  padding: 5px;
+}
 .team-wrapper {
   display: flex;
   flex-direction: column;
