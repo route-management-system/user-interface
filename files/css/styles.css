@@ -203,7 +203,7 @@ h1.dev {
 }
 /* header.main-header - Header used on the marketing site */
 header.main-header {
-  background: #2d3238;
+  background: #F29021;
   color: #fff;
   position: relative;
 }
@@ -212,7 +212,7 @@ header.main-header .inner-wrapper {
 }
 header.main-header a {
   color: #fff;
-  background-color: #2d3238;
+  background-color: #F29021;
   display: block;
   text-decoration: none;
 }
@@ -261,7 +261,7 @@ header.main-header nav a.logo-button {
   display: block;
   text-align: center;
   margin: 0;
-  background: #2d3238;
+  background: #F29021;
 }
 header.main-header nav a.menu-button {
   margin: 0;
@@ -325,7 +325,7 @@ header.main-header nav a.close-button {
 /* header.main-footr - Footer used on the marketing site */
 footer.main-footer {
   padding: 20px 0 1px;
-  background: #2d3238;
+  background: #F29021;
   color: #fff;
   position: absolute;
   width: 100%;
@@ -686,23 +686,56 @@ footer.main-footer p.copyright .co-full-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
-.legal-wrapper {
-  display: flex;
-  flex-direction: column;
+section.contact .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
 }
-.legal-container {
-  padding-top: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 150px;
+section.contact h1,
+section.contact h2,
+section.contact h3 {
+  margin: 20px 0 0;
 }
-.legal-container .mt-4 {
-  font-size: 2rem;
-  padding-bottom: 20px;
-  padding-top: 20px;
+section.contact strong {
+  font-weight: bold;
 }
-.legal-container p {
-  font-size: 1.2rem;
+section.contact p {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+section.credits .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
+}
+section.credits h1,
+section.credits h2,
+section.credits h3 {
+  margin: 20px 0 0;
+}
+section.credits strong {
+  font-weight: bold;
+}
+section.credits p {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+section.legal .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
+}
+section.legal h1,
+section.legal h2,
+section.legal h3 {
+  margin: 20px 0;
+}
+section.legal strong {
+  font-weight: bold;
+}
+section.legal p {
+  margin: 10px 0;
+  padding: 0 5px;
 }
 section.login .inner-wrapper {
   flex-direction: column;
@@ -739,24 +772,87 @@ section.login form .cta-button {
   display: block;
   margin: 0 auto;
 }
-.privacy-wrapper {
-  display: flex;
-  flex-direction: column;
+section.press .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
 }
-.privacy p {
-  padding-bottom: 10px;
+section.press h1,
+section.press h2,
+section.press h3 {
+  margin: 20px 0 0;
 }
-.privacy ul {
+section.press strong {
+  font-weight: bold;
+}
+section.press p {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+section.press .date {
+  font-weight: bold;
+}
+section.pricing .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
+}
+section.pricing h1,
+section.pricing h2,
+section.pricing h3 {
+  margin: 20px 0 0;
+}
+section.pricing strong {
+  font-weight: bold;
+}
+section.pricing p {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+section.privacy .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
+}
+section.privacy h1,
+section.privacy h2,
+section.privacy h3 {
+  margin: 20px 0;
+}
+section.privacy strong {
+  font-weight: bold;
+}
+section.privacy p {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+section.privacy ul {
   padding-top: 10px;
   padding-bottom: 10px;
+  list-style-position: outside;
+  list-style-type: circle;
+  max-width: 500px;
 }
-.privacy ul li:before {
-  content: '•';
-  padding-right: 15px;
+section.privacy li {
+  padding: 10px;
+  margin-left: 40px;
 }
 section.about-product .inner-wrapper {
-  flex-direction: column;
+  display: block;
+  padding: 2rem 2rem 50px;
   max-width: 800px;
+}
+section.about-product h1,
+section.about-product h2,
+section.about-product h3 {
+  margin: 20px 0 0;
+}
+section.about-product strong {
+  font-weight: bold;
+}
+section.about-product p {
+  margin: 10px 0;
+  padding: 0 5px;
 }
 section.about-product article {
   margin-bottom: 25px;
@@ -769,6 +865,23 @@ section.about-product article h2 {
 section.about-product article p {
   font-size: 1.2rem;
   padding: 5px;
+}
+section.contact .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
+}
+section.contact h1,
+section.contact h2,
+section.contact h3 {
+  margin: 20px 0 0;
+}
+section.contact strong {
+  font-weight: bold;
+}
+section.contact p {
+  margin: 10px 0;
+  padding: 0 5px;
 }
 .team-header h1 {
   font-family: 'Montserrat', sans-serif;
@@ -866,6 +979,41 @@ section.about-product article p {
 }
 .summary-close {
   display: none;
+}
+section.terms .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
+}
+section.terms h1,
+section.terms h2,
+section.terms h3 {
+  margin: 20px 0;
+}
+section.terms strong {
+  font-weight: bold;
+}
+section.terms p {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+section#hero-shot {
+  padding-top: 1px;
+}
+section#hero-shot .inner-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 700px;
+}
+section#hero-shot h1#product-title {
+  font-size: 1.7rem;
+}
+section#hero-shot p {
+  font-size: 1.1rem;
+}
+section#hero-shot p.product-img {
+  margin-top: 20px;
+  max-width: 600px;
 }
 section.feature {
   padding: 4rem 0;
