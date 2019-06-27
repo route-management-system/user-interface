@@ -754,7 +754,6 @@ section.login form .cta-button {
   content: '•';
   padding-right: 15px;
 }
-<<<<<<< HEAD
 section.about-product .inner-wrapper {
   flex-direction: column;
   max-width: 800px;
@@ -770,12 +769,11 @@ section.about-product article h2 {
 section.about-product article p {
   font-size: 1.2rem;
   padding: 5px;
-=======
+}
 .team-header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.2rem;
   font-weight: bolder;
->>>>>>> dev
 }
 .team-wrapper {
   display: flex;
