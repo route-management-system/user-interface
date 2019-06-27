@@ -38,3 +38,33 @@ if (document.querySelectorAll('.team-member').length > 0) {
 } else {
 	console.log('nothing matching command');
 }
+
+/* summary button */
+
+class SummaryPress {
+	constructor(element) {
+		this.element = element;
+		this.buttonOpen = this.element.querySelector('.summary-open');
+		this.buttonClose = this.element.querySelector('.summary-close');
+		this.paragraph = this.element.querySelector('.summary');
+		console.log(this.paragraph);
+
+		this.buttonOpen.addEventListener('click', this.expandParagraph.bind(this));
+		this.buttonClose.addEventListener('click', this.collapseParagraph.bind(this));
+	}
+
+	expandParagraph() {
+		this.paragraph.style.display = 'block';
+		this.buttonOpen.style.display = 'none';
+		this.buttonClose.style.display = 'block';
+	}
+
+	collapseParagraph() {
+		this.paragraph.style.display = 'none';
+		this.buttonOpen.style.display = 'block';
+		this.buttonClose.style.display = 'none';
+	}
+}
+
+const buttons = document.querySelectorAll('.member-summary');
+buttons.forEach(button => new SummaryPress(button));
