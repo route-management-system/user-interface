@@ -763,20 +763,31 @@ footer.main-footer p.copyright .co-full-name {
   color: red;
 }
 .team-title-div p {
+  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
 }
-.summary p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  font-weight: lighter;
+.summary {
   display: none;
 }
-@media (min-width: 800px) {
-  .summary p {
-    display: block;
-  }
+.summary p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.summary-btn {
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: blue;
+  color: white;
+}
+.summary-close {
+  display: none;
 }
 section.feature {
   padding: 4rem 0;
