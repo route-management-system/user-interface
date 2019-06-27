@@ -427,18 +427,23 @@ footer.main-footer p.copyright .co-full-name {
   border-radius: 10px;
 }
 .about-wrapper {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .about-wrapper .team {
   text-align: center;
   font-size: 2.6rem;
 }
+.about-header {
+  padding-bottom: 30px;
+}
 .about-header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.2rem;
   font-weight: bolder;
+  text-align: center;
 }
 .about-team-header {
   margin-top: 30px;
@@ -584,13 +589,17 @@ footer.main-footer p.copyright .co-full-name {
   transform: perspective(1500px) translateZ(3px);
   border-radius: 10px;
 }
+.blog-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
 .blog-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
   margin-bottom: 150px;
-}
-.blog-header {
-  background: #e4decd;
 }
 .articles-container {
   display: flex;
@@ -659,7 +668,15 @@ footer.main-footer p.copyright .co-full-name {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
+.legal-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 20px;
+}
 .legal-wrapper {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -677,9 +694,20 @@ footer.main-footer p.copyright .co-full-name {
 .legal-container p {
   font-size: 1.2rem;
 }
+.privacy-header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  text-align: center;
+  padding-bottom: 20px;
+}
 .privacy-wrapper {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
+}
+.privacy {
+  padding-top: 20px;
 }
 .privacy p {
   padding-bottom: 10px;
@@ -704,12 +732,12 @@ footer.main-footer p.copyright .co-full-name {
   font-weight: bolder;
 }
 .team-wrapper {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
 }
 .team-container {
-  padding-top: 50px;
-  padding-bottom: 200px;
+  padding-bottom: 130px;
   display: flex;
   flex-direction: column;
 }
