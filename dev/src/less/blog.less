@@ -4,6 +4,7 @@
 
 .shadow-element {
     box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
+    transform: perspective(700px) translateZ(30px);
   }
 
 .blog-wrapper {
@@ -46,11 +47,11 @@
         width: 150px;
         height: 150px;
         margin-right: 20px;
-        background: blue;
+        //background: blue;
         border-radius: 10px;
 
-        padding-top: 40px;
-        padding-left: 40px;
+        //padding-top: 40px;
+        //padding-left: 40px;
 
         display: none;
 
@@ -78,7 +79,15 @@
             color: white;
             border: 1px solid white;
 
-            border-radius: 15px
+            font-size: 1rem;
+
+            border-radius: 15px;
+
+            &:hover {
+                background: white;
+                color: blue;
+                border-color: blue;
+            }
         }
     }
 }
