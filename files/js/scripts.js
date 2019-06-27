@@ -35,11 +35,21 @@ if (document.querySelectorAll('.team-member').length > 0) {
 	const links = document.querySelectorAll('.article-layer');
 	console.log('found elements 2');
 	links.forEach(link => new Shadow(link));
+} else if (document.querySelectorAll('.feature-layer').length > 0){
+	/* For the features */
+	const links = document.querySelectorAll('.feature-layer');
+	console.log('found elements 3');
+	links.forEach(link => new Shadow(link));
+
+	/* For the members section of the about page */
+	const links2 = document.querySelectorAll('.about-member');
+	console.log('found elements 4');
+	links2.forEach(link => new Shadow(link));
 } else {
-	console.log('nothing matching command');
+
 }
 
-/* summary button */
+/* summary button: for the team.html page */
 
 class SummaryPress {
 	constructor(element) {

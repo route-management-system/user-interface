@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:400i&display=swap');
 
+
+/* For the shadow hover box functionality */
+.shadow-element {
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.4);
+  transform: perspective(1500px) translateZ(3px);
+  border-radius: 10px;
+}
+
+
 .team-header {
   h1 {
     font-family: 'Montserrat', sans-serif;
@@ -11,11 +20,6 @@
 .team-wrapper {
     display: flex;
     flex-direction: column;
-}
-
-.shadow-element {
-  box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
-  transform: perspective(700px) translateZ(30px);
 }
 
 
@@ -38,7 +42,6 @@
         margin-bottom: 2em;
         padding: 2em;
         max-width: 800px;
-        border-radius: 5px;
 
         display: flex;
         justify-content: flex-start;
@@ -85,15 +88,15 @@
         color: blue;
         
         &:hover {
-          color: red;
+          color: lightblue;
         }
       }
     }
   }
 
   .team-title-div {
+    margin-top: 20px;
     p {
-      margin-top: 20px;
       font-family: 'Montserrat', sans-serif;
       font-size: 1rem;
       font-weight: lighter;
@@ -123,6 +126,12 @@
 
   background: blue;
   color: white;
+
+  &:hover {
+    background: white;
+    color: blue;
+    border-color: blue;
+  }
 
 }
 

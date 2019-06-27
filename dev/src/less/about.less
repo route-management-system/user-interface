@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto:400i&display=swap');
 
+/* Used for the three D feature for this page */
+.shadow-element {
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.4);
+    transform: perspective(1500px) translateZ(3px);
+    border-radius: 10px;
+  }
+
+
 .about-wrapper {
     display: flex;
     flex-direction: column;
@@ -90,7 +98,7 @@
             margin-right: 4px;
 
             &:hover {
-                color: red;
+                color: lightblue;
             }
         }
     }

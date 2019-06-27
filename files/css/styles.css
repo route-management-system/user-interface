@@ -420,6 +420,12 @@ footer.main-footer p.copyright .co-full-name {
   font-display: swap;
   src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v19/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
 }
+/* Used for the three D feature for this page */
+.shadow-element {
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.4);
+  transform: perspective(1500px) translateZ(3px);
+  border-radius: 10px;
+}
 .about-wrapper {
   display: flex;
   flex-direction: column;
@@ -492,7 +498,7 @@ footer.main-footer p.copyright .co-full-name {
   margin-right: 4px;
 }
 .about-team-title .social-links .icon:hover {
-  color: red;
+  color: lightblue;
 }
 .company-summary .message-content {
   margin-top: 30px;
@@ -581,8 +587,9 @@ footer.main-footer p.copyright .co-full-name {
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
 .shadow-element {
-  box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
-  transform: perspective(700px) translateZ(30px);
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.4);
+  transform: perspective(1500px) translateZ(3px);
+  border-radius: 10px;
 }
 .blog-wrapper {
   display: flex;
@@ -692,6 +699,12 @@ footer.main-footer p.copyright .co-full-name {
   content: '•';
   padding-right: 15px;
 }
+/* For the shadow hover box functionality */
+.shadow-element {
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.4);
+  transform: perspective(1500px) translateZ(3px);
+  border-radius: 10px;
+}
 .team-header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.2rem;
@@ -700,10 +713,6 @@ footer.main-footer p.copyright .co-full-name {
 .team-wrapper {
   display: flex;
   flex-direction: column;
-}
-.shadow-element {
-  box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
-  transform: perspective(700px) translateZ(30px);
 }
 .team-container {
   padding-top: 50px;
@@ -723,7 +732,6 @@ footer.main-footer p.copyright .co-full-name {
   margin-bottom: 2em;
   padding: 2em;
   max-width: 800px;
-  border-radius: 5px;
   display: flex;
   justify-content: flex-start;
 }
@@ -760,10 +768,12 @@ footer.main-footer p.copyright .co-full-name {
   color: blue;
 }
 .team-title-div .media-icons .social-icon:hover {
-  color: red;
+  color: lightblue;
+}
+.team-title-div {
+  margin-top: 20px;
 }
 .team-title-div p {
-  margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
@@ -785,6 +795,11 @@ footer.main-footer p.copyright .co-full-name {
   border-radius: 10px;
   background: blue;
   color: white;
+}
+.summary-btn:hover {
+  background: white;
+  color: blue;
+  border-color: blue;
 }
 .summary-close {
   display: none;
