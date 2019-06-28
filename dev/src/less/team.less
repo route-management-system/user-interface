@@ -26,7 +26,6 @@ section.team {
     .team-member {
         margin-top: 20px;
         display: flex;
-        flex-direction: row-reverse;
         padding: 24px;
         box-shadow: 0 0 12px rgba(0, 0, 0, .2);
         border-radius: 0.5em;
@@ -65,14 +64,17 @@ section.team {
       }
 
     .team-member-image {
-        display: none;
+        position: absolute;
+        margin-left: -10000px;
+        flex-shrink: 0;
 
         @media only screen and (min-width: 600px) {
-            display: inline-block;
+            position: relative;
             width: 125px;
             height: 125px;
             border-radius: 50%;
             margin: 0 20px 0 0;
+            object-fit: cover;
         }
     }
 }

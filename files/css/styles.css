@@ -200,8 +200,8 @@ h1 {
 }
 /* header.main-header - Header used on the marketing site */
 header.main-header {
-  background: #fc6600;
-  color: #000;
+  background: #254560;
+  color: #f3f3f3;
   position: relative;
   font-weight: bolder;
 }
@@ -209,8 +209,8 @@ header.main-header .inner-wrapper {
   padding: 0;
 }
 header.main-header a {
-  color: #000;
-  background-color: #fc6600;
+  color: #f3f3f3;
+  background-color: #254560;
   display: block;
   text-decoration: none;
 }
@@ -259,7 +259,7 @@ header.main-header nav a.logo-button {
   display: block;
   text-align: center;
   margin: 0;
-  background: #fc6600;
+  background: #254560;
 }
 header.main-header nav a.menu-button {
   margin: 0;
@@ -323,8 +323,8 @@ header.main-header nav a.close-button {
 /* header.main-footr - Footer used on the marketing site */
 footer.main-footer {
   padding: 20px 0 1px;
-  background: #fc6600;
-  color: #000;
+  background: #254560;
+  color: #f3f3f3;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -346,12 +346,12 @@ footer.main-footer h3 {
     padding-bottom: 1rem;
     font-size: 1.5rem;
     width: 95%;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #aaa;
     margin: 0 auto;
   }
 }
 footer.main-footer a {
-  color: #000;
+  color: #f3f3f3;
   font-size: 1rem;
 }
 @media only screen and (min-width: 600px) {
@@ -420,7 +420,7 @@ footer.main-footer p.copyright {
   padding: 10px 0;
   text-align: center;
   font-size: 1rem;
-  border-top: 1px solid #000;
+  border-top: 1px solid #aaa;
   position: relative;
   bottom: 0;
 }
@@ -762,7 +762,6 @@ section.team h2 {
 section.team .team-member {
   margin-top: 20px;
   display: flex;
-  flex-direction: row-reverse;
   padding: 24px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
@@ -792,15 +791,18 @@ section.team .team-member-details .social-icons img {
   height: 20px;
 }
 section.team .team-member-image {
-  display: none;
+  position: absolute;
+  margin-left: -10000px;
+  flex-shrink: 0;
 }
 @media only screen and (min-width: 600px) {
   section.team .team-member-image {
-    display: inline-block;
+    position: relative;
     width: 125px;
     height: 125px;
     border-radius: 50%;
     margin: 0 20px 0 0;
+    object-fit: cover;
   }
 }
 section.terms .inner-wrapper {
