@@ -1,3 +1,24 @@
+section#hero-shot {
+    padding: 1px;
+    .inner-wrapper {
+        display: block;
+        padding: 2rem 2rem 50px;
+        max-width: 700px;
+    }
+
+    h1#product-title {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    p.product-img {
+        margin: 20px 0;
+        max-width: 600px;
+    }
+}
 
 section.feature {
     padding: 4rem 0;
@@ -5,7 +26,7 @@ section.feature {
     .inner-wrapper {
         border-radius: 1rem;
         overflow: hidden;
-        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); */
     }
 
     .feature-image {
@@ -49,26 +70,36 @@ section.feature {
         }
     }
 
+    small {
+        font-size: .8rem;
+    }
+
     &.product {
-        min-height: 500px;
-        padding-top: 20px;
+        padding-top: 4rem;
 
         @media only screen and (min-width: 1024px) {
-            background-image: url('/img/map-bg.gif');
+            background-image: url('../img/map-wide-bg-01.jpg');
             background-origin: border-box;
             background-repeat: repeat-y;
             background-position: center;
+        }
+
+        @media only screen and (min-width: 1770px) {
             background-size: cover;
         }
 
         .inner-wrapper {
             flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
             box-shadow: 0 0 0 0;
         }
 
-        h1, h1 + p {
+        h1, p {
             width: 100%;
+            max-width: 800px;
             text-align: center;
+            margin: 0 auto;
         }
 
         h1 {
@@ -76,9 +107,48 @@ section.feature {
             padding: 0 0 1rem 0;
         }
 
-        h1 + p {
+        p {
             font-size: 1.5rem;
             line-height: 1.5;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &.testimonial {
+        background: #7395ae;
+        width: 100%;
+
+        .inner-wrapper {
+            padding: 10px;
+            width: 90%;
+            max-width: 800px;
+            flex-direction: column;
+            background: rgba(196, 219, 243, 0.7);
+
+            @media only screen and (min-width: 600px) {
+                padding: 30px;
+            }
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1rem;
+
+            @media only screen and (min-width: 600px) {
+                font-weight: bold;
+                font-size: 2rem;
+            }
+        }
+
+        .customer {
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            text-align: right;
+            padding-top: 20px;
         }
     }
 
@@ -86,14 +156,14 @@ section.feature {
         background: rgb(174, 174, 182);
 
         .feature-image {
-            background-image: url('/img/traffic.jpg');
+            background-image: url('../img/traffic.jpg');
         }
     }
 
     &.traffic {
 
         .feature-image {
-            background-image: url('/img/traffic2.jpg');
+            background-image: url('../img/traffic2.jpg');
         }
     }
 
@@ -101,13 +171,13 @@ section.feature {
         background: #eceef3;
 
         .feature-image {
-            background-image: url('/img/accident.jpg');
+            background-image: url('../img/accident.jpg');
         }
     }
 
     &.weather {
         .feature-image {
-            background-image: url('/img/weather.jpg');
+            background-image: url('../img/weather.jpg');
         }
     }
 

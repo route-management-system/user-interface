@@ -1,18 +1,33 @@
-.privacy-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-.privacy {
-    p {
-        padding-bottom: 10px;
+section.privacy {
+    .inner-wrapper {
+        display: block;
+        padding: 2rem 2rem 50px;
+        max-width: 800px;
     }
+
+    h1, h2, h3 {
+        margin: 20px 0;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    p {
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+
     ul {
         padding-top: 10px;
         padding-bottom: 10px;
+        list-style-position: outside;
+        list-style-type: circle;
+        max-width: 500px;
+    }
 
-        li:before {
-            content: '•';
-            padding-right: 15px;
-        }
+    li {
+        padding: 10px;
+        margin-left: 40px;
     }
 }
