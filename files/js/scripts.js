@@ -5,32 +5,3 @@
     const footer_height = document.querySelector('.main-footer').scrollHeight;
     document.body.style.paddingBottom = (footer_height - 10) + 'px';
 }());
-
-/* shadow highlight script for the blog and the about pages */
-
-
-
-class Shadow {
-	constructor(element) {
-		this.element = element;
-		this.element.addEventListener('mouseover', this.toggleShadowOver.bind(this));
-		this.element.addEventListener('mouseout', this.toggleShadowLeave.bind(this));
-	}
-
-	toggleShadowOver() {
-		this.element.classList.add('shadow-element');
-	}
-
-	toggleShadowLeave() {
-		this.element.classList.remove('shadow-element');
-	}
-}
-
-
-if (document.querySelectorAll('.team_member').length > 0) {
-	const links = document.querySelectorAll('.team_member');
-	links.forEach(link => new Shadow(link));
-} else if (document.querySelectorAll('.article-layer').length > 0) {
-	const links = document.querySelectorAll('.article-layer');
-	links.forEach(link => new Shadow(link));
-}
