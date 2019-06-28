@@ -195,18 +195,22 @@ h6 {
   background-color: #21af58;
   color: #ffffff;
 }
+h1 {
+  font-size: 1.3rem;
+}
 /* header.main-header - Header used on the marketing site */
 header.main-header {
-  background: #F29021;
-  color: #fff;
+  background: #fc6600;
+  color: #000;
   position: relative;
+  font-weight: bolder;
 }
 header.main-header .inner-wrapper {
   padding: 0;
 }
 header.main-header a {
-  color: #fff;
-  background-color: #F29021;
+  color: #000;
+  background-color: #fc6600;
   display: block;
   text-decoration: none;
 }
@@ -255,7 +259,7 @@ header.main-header nav a.logo-button {
   display: block;
   text-align: center;
   margin: 0;
-  background: #F29021;
+  background: #fc6600;
 }
 header.main-header nav a.menu-button {
   margin: 0;
@@ -319,12 +323,13 @@ header.main-header nav a.close-button {
 /* header.main-footr - Footer used on the marketing site */
 footer.main-footer {
   padding: 20px 0 1px;
-  background: #F29021;
-  color: #fff;
+  background: #fc6600;
+  color: #000;
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
+  font-weight: bolder;
 }
 footer.main-footer .inner-wrapper {
   flex-direction: column;
@@ -346,8 +351,8 @@ footer.main-footer h3 {
   }
 }
 footer.main-footer a {
-  color: #fff;
-  font-size: 0.8rem;
+  color: #000;
+  font-size: 1rem;
 }
 @media only screen and (min-width: 600px) {
   footer.main-footer a {
@@ -414,7 +419,7 @@ footer.main-footer p.copyright {
   line-height: 1.5;
   padding: 10px 0;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-top: 1px solid #000;
   position: relative;
   bottom: 0;
@@ -444,6 +449,14 @@ section.about p {
   margin: 10px 0;
   padding: 0 5px;
 }
+div.inner-wrapper.blog-wrapper {
+  display: block;
+  padding: 2rem 2rem 50px;
+  max-width: 800px;
+}
+div.inner-wrapper.blog-wrapper > h1 {
+  margin: 20px 0 0;
+}
 .shadow-element {
   box-shadow: 5px 5px 5px 8px rgba(0, 0, 0, 0.4);
   transform: perspective(700px) translateZ(30px);
@@ -451,7 +464,7 @@ section.about p {
 .blog-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .blog-header {
   background: #e4decd;
@@ -467,6 +480,7 @@ section.about p {
   display: flex;
   margin: 10px;
   height: 180px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 800px) {
   .article-layer {
@@ -539,6 +553,12 @@ section.contact strong {
 section.contact p {
   margin: 10px 0;
   padding: 0 5px;
+}
+@media only screen and (min-width: 600px) {
+  section.contact .contact-lists {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 section.credits .inner-wrapper {
   display: block;
@@ -629,23 +649,6 @@ section.press p {
 section.press .date {
   font-weight: bold;
 }
-section.pricing .inner-wrapper {
-  display: block;
-  padding: 2rem 2rem 50px;
-  max-width: 800px;
-}
-section.pricing h1,
-section.pricing h2,
-section.pricing h3 {
-  margin: 20px 0 0;
-}
-section.pricing strong {
-  font-weight: bold;
-}
-section.pricing p {
-  margin: 10px 0;
-  padding: 0 5px;
-}
 section.privacy .inner-wrapper {
   display: block;
   padding: 2rem 2rem 50px;
@@ -720,6 +723,23 @@ section.contact p {
   margin: 10px 0;
   padding: 0 5px;
 }
+section.contact .sign-up-form {
+  max-width: 400px;
+  margin: 20px auto;
+}
+section.contact .sign-up-form input {
+  width: 100%;
+  border-radius: 4px;
+  line-height: 1.6rem;
+  font-size: 1.4em;
+}
+section.contact .sign-up-form label p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+section.contact .sign-up-form .cta-button {
+  margin: 5px 0;
+}
 section.team .inner-wrapper {
   display: block;
   padding: 2rem 2rem 50px;
@@ -773,14 +793,14 @@ section.team .team-member-details .social-icons img {
 }
 section.team .team-member-image {
   display: none;
-  width: 125px;
-  height: 125px;
-  border-radius: 50%;
-  margin: 0 20px 0 0;
 }
 @media only screen and (min-width: 600px) {
   section.team .team-member-image {
     display: inline-block;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
   }
 }
 section.terms .inner-wrapper {
