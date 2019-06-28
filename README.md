@@ -4,7 +4,7 @@ Route Management System was originally developed by Mason Karsevar and Rich Habe
 
 ## Demo
 
-Check out the demo of the Web UI at: [RMS - Route Management System](https://rich-fswd21.github.io/rms/about.html)
+Check out the demo of the Web UI at: [RMS - Route Management System](https://rich-fswd21.github.io/)
 
 ## Contributors
 
